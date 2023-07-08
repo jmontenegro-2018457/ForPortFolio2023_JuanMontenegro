@@ -1,0 +1,36 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(216, 147, 56);
+    padding-top: 30vh;
+    text-align: center;
+}
+
+
+#login, #title{
+    margin-top: 2vh;
+    text-align: left;
+    padding: 3vh;
+    width: 50vh;
+    max-width:90vw;
+    background-color: antiquewhite;
+    align-items: center;
+}
+
+#title{
+    padding: 1vh;
+    text-align: center;
+    font-size: 3rem;
+    font-family: cursive;
+    background-color: rgba(255, 245, 234, 0.767);
+}
+
+#inicio{
+    text-align: right;
+}
+
+

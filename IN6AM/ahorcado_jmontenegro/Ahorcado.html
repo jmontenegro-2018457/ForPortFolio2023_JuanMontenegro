@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ahorcado</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="estiloAhorcado.css">
+	</head>
+
+	<body><center>
+		<div id="encabezado">
+			<h1>Ahorcado<br></h1><br>
+		</div>
+
+		<div id="ahorcado">
+			<img src="img/ima1.png" id="ima1" style="width:500px;height:400px">
+			<img src="img/ima2.png" id="ima2" style="width:500px;height:400px">
+			<img src="img/ima3.png" id="ima3" style="width:500px;height:400px">
+			<img src="img/ima4.png" id="ima4" style="width:500px;height:400px">
+			<img src="img/ima5.png" id="ima5" style="width:500px;height:400px">
+			<img src="img/ima6.png" id="ima6" style="width:500px;height:400px">
+			<img src="img/ima7.png" id="ima7" style="width:500px;height:400px">
+		</div>
+
+		<div id="input" style="visibility:hidden;">
+			<br><br><input type="text" id="ingresar" maxlength="1">
+			<input type="button" id="comprobar" value="comprobar" onclick="Probar()">
+			<input type="button" id="rst" value="volver a jugar" style="display: none" onclick="Reload()">
+			<input type="button" id="mostrar" value="mostrar palabra" style="display:none" onclick="Mostrar()">
+		</div>
+
+		<button type="button" id="empezar"  onclick="Empezar()">Empezar</button>
+		<div id = "palabras">
+			<h1 id="base"></h1>
+		</div>
+	</center></body>
+	
+
+	<script type="text/javascript">
+		
+		/*contadores para cambiar imagen y cantidad de aciertos o intentos*/
+		var cont = 1;
+		var prueba = 0;
+		var win = 0;
+		var img='img/ima'+cont+'.png'
+
+		/*variables para hacer referencia a elementos*/
+		var uno = document.getElementById('empezar');
+		const base = document.getElementById("base");
+		const ahorcado = document.getElementById("ahorcado");
+		let dashes = document.getElementsByClassName("dashes");
+
+		/*array con las letras que ya se intentaron*/
+		const letras = ['',' '];
+
+
+		/*ocultar imagenes innecesarias*/
+		for(i=1;i<=7;i++){
+			document.getElementById("ima"+i).style.display="none";
+		}
+	    
+		/*función para obtener elemento random de un array*/
+		function RandArray(array){
+		    var rand = Math.random()*array.length | 0;
+		    var rValue = array[rand];
+		    return rValue;
+		}
+
+		/*array con palabras*/
+		var myArray = ['palabra', 'salon', 'arbol', 'cartel', 'silla', 'luz','consola','programa','lenguaje','saludo','lapiz','guitarra','reloj','telescopio','documento'];
+
+		/*inicialización de variable con elemento random del array*/
+		var rValue = RandArray(myArray);
+
+		/*función para mostrar la primer imagen y los inputs*/
+		function Empezar(){
+			if (uno.innerHTML == 'Empezar'){
+				document.getElementById('empezar').style.visibility="hidden";
+				document.getElementById('input').style.visibility="visible";
+				document.getElementById("ima1").style.display="initial";
+			}
+
+
+			/*reemplazo de caracteres de la palabra por guiones*/
+			let display_ = rValue.replace(/./g, '<span class="dashes">__ </span>');
+			base.innerHTML=display_;
+			
+	    }
+
+	    /*función para comprobar si el caracter es correcto*/
+	    function Probar(){
+
+	    	/*comprobar que la letra no se haya añadido antes*/
+	    	if(letras.indexOf(ingresar.value)>=0){
+	    				window.alert("Ya se intento esta  letra, o el cáracter no es necesario");
+	    				prueba++;
+	    			}else{
+	    			for(var i=0;i<rValue.length;i++){
+
+	    				/*si es correcto reemplazar el guion por el caracter*/
+	    				if(ingresar.value.toLowerCase() == rValue.charAt(i)){
+					    	dashes[i].innerText = rValue.charAt(i)+" ";
+					   		win++;
+					    	prueba++;
+			    		}
+
+			    		/*agregar la del intento al array*/
+			    		letras.push(ingresar.value.toLowerCase());
+	    		
+	    			}
+	    	}
+
+	    	/*aumento del contador para cambiar imagen*/
+	    	if(prueba==0 & cont<7){
+	    		cont++;	
+	    	}
+
+	    	/*reinicio de contador de prueba*/
+	    	prueba=0;
+	    	
+	    	/*ocultar imagenes innecesarias*/
+	    	for(i=1;i<=7;i++){
+			document.getElementById("ima"+i).style.display="none";
+			}
+
+			/*mostrar imagen correcta según indica el contador*/
+			document.getElementById("ima"+cont).style.display="initial";
+
+			/*Determinar si se ganó o perdio usando los contadores de intento*/
+			if(cont>=7){
+				window.alert("perdiste =(");
+				/*ocultar botón que ya no es necesario*/
+				document.getElementById("comprobar").style.display="none";
+				/*mostrar botones para mostrar palabra y recargar página*/
+				document.getElementById("mostrar").style.display="initial";
+				document.getElementById("rst").style.display="initial";
+			}else if(win==rValue.length){
+				window.alert("ganaste :)");
+				/*mostrar boton para recargar página*/
+				document.getElementById("comprobar").style.display="none";
+				document.getElementById("rst").style.display="initial";
+			}
+
+			/*reiniciar el valor que se encuentra en nuestro input text*/
+	    	ingresar.value="";
+	    }
+
+
+	    /*función para recargar página*/
+	 	function Reload(){
+	 		location.reload();
+	 	}
+
+	 	/*función por si se perdió poder mostrar la palabra correcta*/
+	 	function Mostrar(){
+	 		for(var i=0;i<rValue.length;i++){	
+	    		dashes[i].innerText = rValue.charAt(i)+" ";
+	    	}
+	    	/*ocultar botón mostrar*/
+	    	document.getElementById("mostrar").style.display="none";
+	 	}
+
+	</script>
+</html>
