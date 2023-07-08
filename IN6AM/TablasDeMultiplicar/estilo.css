@@ -1,0 +1,43 @@
+body{
+	padding-top: 9%;
+	background-color: 	#97A6A2;
+}
+
+h1{
+	color: #732C3A;
+	font-size: 300%;
+	font-family: Verdana sans-serif;
+}
+
+label{
+	color:  #0B231D;
+	font-size: 230%;
+}
+
+
+input[type=text]{
+	background-color: ghostwhite;
+	width: 300px; 
+	height: 30px;
+	font-family: Arial;
+	font-size: 125%;
+}
+
+input[type=button]{
+	background-color: #0B231D;
+	color: white;
+	font-size: 25px;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+input[type=button]:hover{
+	background-color: whitesmoke;
+	color: black;
+}
+
+input[type=button]:active{
+	background-color:  #732C3A;
+	color: white;
+}

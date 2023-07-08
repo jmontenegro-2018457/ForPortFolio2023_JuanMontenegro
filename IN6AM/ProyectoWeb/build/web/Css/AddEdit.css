@@ -1,0 +1,46 @@
+body{
+	background-color: #2B2927;
+}
+
+h1{
+color: #FF9800;
+font-size: 45px;
+}
+
+.container{
+	position: absolute;
+	top: 20%;
+	left: 38%;
+	color: #51b7d1;
+	font-size: 28px;
+}
+
+input[type=submit]{
+	background-color: #01421f;
+	color: white;
+	font-size: 25px;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+input[type=submit]:hover{
+	background-color: whitesmoke;
+	color: black;
+}
+
+input[type=submit]:active{
+	background-color: #995903;
+	color: white;
+}
+
+input[type=text]{
+	border-radius: 10px;
+	background-color: ghostwhite;
+	width: 320px; 
+	height: 20px;
+	font-family: Arial;
+	font-size: 90%;
+	padding: 10px;
+}

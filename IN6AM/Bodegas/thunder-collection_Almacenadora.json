@@ -1,0 +1,356 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Almacenadora",
+    "dateExported": "2023-04-30T00:09:59.243Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "6af6f45e-f39c-4f14-8c4c-0c1ea44cd550",
+            "name": "User",
+            "containerId": "",
+            "created": "2023-04-29T21:26:06.611Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "389a3281-7d2a-4cbd-a086-9abd33e9e548",
+            "name": "Cellars",
+            "containerId": "6af6f45e-f39c-4f14-8c4c-0c1ea44cd550",
+            "created": "2023-04-29T21:26:06.612Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "b2aca9f9-0184-4a72-bd1b-942898426808",
+            "name": "Benefit",
+            "containerId": "6af6f45e-f39c-4f14-8c4c-0c1ea44cd550",
+            "created": "2023-04-29T21:26:06.613Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "9b8bc96c-9a0a-4976-a987-2b0396d49ae6",
+            "colId": "64ce2c8a-d005-47e6-82a8-e5ca0b7d11d7",
+            "containerId": "6af6f45e-f39c-4f14-8c4c-0c1ea44cd550",
+            "name": "Test",
+            "url": "/user/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-29T21:26:06.612Z",
+            "modified": "2023-04-29T21:26:06.612Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4ab3a192-41b3-4ef0-a9d7-e8ce157eb9d7",
+            "colId": "64ce2c8a-d005-47e6-82a8-e5ca0b7d11d7",
+            "containerId": "b2aca9f9-0184-4a72-bd1b-942898426808",
+            "name": "Test",
+            "url": "/benefit/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-04-29T21:26:06.613Z",
+            "modified": "2023-04-29T21:26:06.613Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3a38cfc8-626d-4d07-afcb-88c7310a40c4",
+            "colId": "64ce2c8a-d005-47e6-82a8-e5ca0b7d11d7",
+            "containerId": "389a3281-7d2a-4cbd-a086-9abd33e9e548",
+            "name": "Test",
+            "url": "/cellars/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-04-29T21:26:06.614Z",
+            "modified": "2023-04-29T21:26:06.614Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6de346c9-e2c4-4e65-862c-a6de1a61a283",
+            "colId": "64ce2c8a-d005-47e6-82a8-e5ca0b7d11d7",
+            "containerId": "6af6f45e-f39c-4f14-8c4c-0c1ea44cd550",
+            "name": "Register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-04-29T21:26:06.615Z",
+            "modified": "2023-04-29T21:26:06.615Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Ian"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Alvarado"
+                    },
+                    {
+                        "name": "username",
+                        "value": "scrum"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123"
+                    },
+                    {
+                        "name": "email",
+                        "value": "ian@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "666"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f4531bac-116f-4458-89dd-a6fd12aa5adc",
+            "colId": "64ce2c8a-d005-47e6-82a8-e5ca0b7d11d7",
+            "containerId": "6af6f45e-f39c-4f14-8c4c-0c1ea44cd550",
+            "name": "Login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-04-29T21:26:06.616Z",
+            "modified": "2023-04-29T21:36:48.317Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "scrum"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e4146458-e26c-4a41-abe0-06100050e37f",
+            "colId": "64ce2c8a-d005-47e6-82a8-e5ca0b7d11d7",
+            "containerId": "6af6f45e-f39c-4f14-8c4c-0c1ea44cd550",
+            "name": "Update",
+            "url": "/user/update/644a90749fea8e5f9ff75bda",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-04-29T21:26:06.617Z",
+            "modified": "2023-04-29T21:26:06.617Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDRhOTA3NDlmZWE4ZTVmOWZmNzViZGEiLCJuYW1lIjoiSWFuIiwic3VybmFtZSI6IkFsdmFyYWRvIiwidXNlcm5hbWUiOiJjdW0iLCJlbWFpbCI6ImlhbkBnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNjgyNjA4NDIxLCJleHAiOjE2ODI2MTU2MjF9.TnDIgMOUBnq-JOSEh2cMlGR7zS_uFvOO6x_Oy_VpVUA\""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "surname",
+                        "value": "monterroso"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "30be6660-f96c-4e7d-8ace-c3ab29a13714",
+            "colId": "64ce2c8a-d005-47e6-82a8-e5ca0b7d11d7",
+            "containerId": "b2aca9f9-0184-4a72-bd1b-942898426808",
+            "name": "Create",
+            "url": "/benefit/create",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-04-29T21:26:06.619Z",
+            "modified": "2023-04-29T21:36:58.065Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDRkOGQ5OWNhMDJjZmFlM2YwMWY5YjYiLCJuYW1lIjoiSWFuIiwic3VybmFtZSI6IkFsdmFyYWRvIiwidXNlcm5hbWUiOiJzY3J1bSIsImVtYWlsIjoiaWFuQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY4MjgwNDIwOCwiZXhwIjoxNjgyODExNDA4fQ.Rny_xAEVaKUAT3lhgb2UqeKsHOPNsOJaS23KtNPFM9I\""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Piezas"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Motores, frenos y Nose"
+                    },
+                    {
+                        "name": "price",
+                        "value": "25"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5785e8d6-fff7-4a8b-8ceb-953c19d31e75",
+            "colId": "64ce2c8a-d005-47e6-82a8-e5ca0b7d11d7",
+            "containerId": "389a3281-7d2a-4cbd-a086-9abd33e9e548",
+            "name": "Create",
+            "url": "/cellars/add",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-04-29T21:37:15.508Z",
+            "modified": "2023-04-30T00:08:08.338Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDRkOGQ5OWNhMDJjZmFlM2YwMWY5YjYiLCJuYW1lIjoiSWFuIiwic3VybmFtZSI6IkFsdmFyYWRvIiwidXNlcm5hbWUiOiJzY3J1bSIsImVtYWlsIjoiaWFuQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY4MjgxMzE4NSwiZXhwIjoxNjgyODIwMzg1fQ.ChMSzIORMfdoGDm7HSn4ge140Lsq4Pqjo5mF2S4MDj8\""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Camara 50"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Piezas de carros"
+                    },
+                    {
+                        "name": "location",
+                        "value": "3 Av 24-30 Z-3,Ciudad de Guatemala,Guatemala"
+                    },
+                    {
+                        "name": "size",
+                        "value": "40"
+                    },
+                    {
+                        "name": "availability",
+                        "value": "no disponible"
+                    },
+                    {
+                        "name": "price",
+                        "value": "40"
+                    },
+                    {
+                        "name": "benefit",
+                        "value": "644d8dfaca02cfae3f01f9b9"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "bd9ce4c7-c296-450b-8053-0791c6005e49",
+            "colId": "64ce2c8a-d005-47e6-82a8-e5ca0b7d11d7",
+            "containerId": "389a3281-7d2a-4cbd-a086-9abd33e9e548",
+            "name": "AddImage",
+            "url": "/cellars/upload-image/644d8ed5ca02cfae3f01f9bc",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2023-04-29T21:40:57.519Z",
+            "modified": "2023-04-29T21:59:23.194Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\YOHAN\\Documents\\6to.Perito\\Bim II\\Almacenadora_Backend\\uploads\\cellars\\bodega.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e35d950b-c153-4124-8e21-965d67285939",
+            "colId": "64ce2c8a-d005-47e6-82a8-e5ca0b7d11d7",
+            "containerId": "389a3281-7d2a-4cbd-a086-9abd33e9e548",
+            "name": "Get-Image",
+            "url": "/cellars/get-image/bc-FNON7DzQRLe-3Cxtc0bJe.jpg",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-04-29T22:01:25.665Z",
+            "modified": "2023-04-29T22:01:42.520Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5273fb0c-560a-4ea1-bbc5-e5213e72b7f4",
+            "colId": "64ce2c8a-d005-47e6-82a8-e5ca0b7d11d7",
+            "containerId": "389a3281-7d2a-4cbd-a086-9abd33e9e548",
+            "name": "Search-cellar",
+            "url": "/cellars/search",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-04-29T23:28:50.717Z",
+            "modified": "2023-04-30T00:07:35.542Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "H"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c3bc93b7-c0bb-46fb-873e-4856e2b5aeb2",
+            "colId": "64ce2c8a-d005-47e6-82a8-e5ca0b7d11d7",
+            "containerId": "389a3281-7d2a-4cbd-a086-9abd33e9e548",
+            "name": "Availability",
+            "url": "/cellars/availability",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-04-29T23:55:46.768Z",
+            "modified": "2023-04-30T00:07:50.147Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "status",
+                        "value": "disponible"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:3200"
+        }
+    }
+}

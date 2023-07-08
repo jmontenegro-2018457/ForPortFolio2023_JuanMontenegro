@@ -1,0 +1,25 @@
+body{
+	background-color: #2B2927;
+}
+
+button{
+	position: absolute;
+	top: 30%;
+	left: 43%;
+	background-color: #FF9800;
+	color: black;
+	font-size: 30px;
+	border-radius: 13px;
+	padding: 10px 15px;
+	font-weight: bold;
+}
+
+button:hover{
+	background-color: #018d91;
+	color: white;
+}
+
+button:active{
+	background-color: #f745f5;
+	color: black;
+}

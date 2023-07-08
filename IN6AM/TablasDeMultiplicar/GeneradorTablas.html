@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Generador tablas de multiplicar</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body >
+	<h1><center> Generar tablas de multiplicar</center></h1>
+	<br>
+	<center>
+		<label>Ingrese un número</label>
+		<br><br><br>
+		<input type="text" id="num1">
+		<br><br><br><br>
+
+		<input type="button" id="Generar" value="Generar tabla" onclick="Tabla()">
+	</center>
+	<script type="text/javascript">
+        document.getElementById("num1")
+	    .addEventListener("keyup", function(e) {
+	        if (e.keyCode === 13) {
+	            document.getElementById("Generar").click();
+	        }
+	    });
+    
+		function Tabla(){
+		ventana = window.open("","TablaDeMultiplicar","","");
+		var valor1 = num1.value*1;
+		ventana.document.write('<html><head><title>Tabla</title><link rel="stylesheet" type="text/css" href="estilo.css"></head><body class="tabla">');
+		ventana.document.write("<center><h1>Tabla del "+valor1+" <br></h1><label><b>");
+		
+		for (var i=1;i<=10;i++) { 
+   			ventana.document.write(valor1+'</label> <label style="color: #732C3A;font-size: 300%"> * </label><label>'+i+'</label><label style="color: #732C3A;font-size: 300%"> = </label><label>'+valor1*i+"<br>");
+		}
+		}
+		ventana.document.write('</b></label></body></html>');
+
+
+	</script>
+	
+
+</body>
+</html>

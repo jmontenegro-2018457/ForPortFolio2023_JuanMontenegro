@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="293.0" style="-fx-background-color: #1F6470;" stylesheets="@../tarea/calculadora/calculadoraCSS.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juanmontenegro.system.FXMLDocumentController">
+   <children>
+      <Button fx:id="btnCero" layoutX="89.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="0">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUno" layoutX="22.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="1">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDos" layoutX="89.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="2">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPunto" layoutX="155.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text=".">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMasMenos" layoutX="22.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="+/-" textFill="#bf0a0a">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnTres" layoutX="155.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="3">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCuatro" layoutX="22.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="4">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCinco" layoutX="89.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="5">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSeis" layoutX="155.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="6">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSiete" layoutX="22.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="7">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnOcho" layoutX="89.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="8">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNueve" layoutX="155.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="9">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnIgual" layoutX="221.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" styleClass="button1" text="=" textFill="#f5efef">
+         <font>
+            <Font name="Californian FB" size="21.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../tarea/calculadora/calculadoraCSS.css" />
+            <URL value="@calculadoraCSS.css" />
+         </stylesheets>
+      </Button>
+      <Button fx:id="btnMas" layoutX="221.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="+" textFill="#bf0a0a">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMenos" layoutX="221.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="-" textFill="#bf0a0a">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPor" layoutX="221.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="*" textFill="#bf0a0a">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDivi" layoutX="221.0" layoutY="203.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="/" textFill="#bf0a0a">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRaiz" layoutX="155.0" layoutY="203.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="√" textFill="#bf0a0a">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUnoX" layoutX="22.0" layoutY="203.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="1/x" textFill="#bf0a0a">
+         <font>
+            <Font name="Californian FB" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCuadrado" layoutX="89.0" layoutY="203.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="x²" textFill="#bf0a0a">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPorcent" layoutX="22.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" stylesheets="@calculadoraCSS.css" text="\%" textFill="#bf0a0a">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCE" layoutX="89.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="CE" textFill="#a43d10">
+         <font>
+            <Font name="Californian FB" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnC" layoutX="155.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" text="C" textFill="#a43d10">
+         <font>
+            <Font name="Californian FB" size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtPantalla" alignment="CENTER_RIGHT" layoutX="21.0" layoutY="58.0" prefHeight="55.0" prefWidth="246.0" promptText="0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <MenuBar layoutY="-1.0" prefHeight="41.0" prefWidth="162.0" stylesheets="@calculadoraCSS.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Cerrar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="9.0" layoutY="464.0" opacity="0.52" prefHeight="22.0" prefWidth="292.0" text="Juan Francisco Montenegro Aguirre -2018457" textFill="WHITE">
+         <font>
+            <Font name="Californian FB" size="15.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Button fx:id="btnBack" layoutX="221.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="55.0" styleClass="button1" text="⌫" textFill="#f5efef">
+         <font>
+            <Font name="Californian FB" size="21.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../tarea/calculadora/calculadoraCSS.css" />
+            <URL value="@calculadoraCSS.css" />
+         </stylesheets>
+      </Button>
+   </children>
+</Pane>

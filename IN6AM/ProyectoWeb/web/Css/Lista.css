@@ -1,0 +1,67 @@
+h1{
+color: white;
+font-size: 70px;
+}
+
+table{
+	color:#2B2927;
+	background: white;
+	border:2px black solid;
+}
+
+thead{
+	color:#2B2927;
+	padding: 7px;
+	font-size: 26px;
+	background-color: 	#EB8C0E;
+}
+
+td { 
+	font-family:Cambria;
+	font-size:21px;
+	padding: 10px 75px;
+}
+
+#control{
+	font-size: 18px;
+}
+
+input[type=button]{
+	background-color: #01421f;
+	color: white;
+	font-size: 25px;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+input[type=button]:hover{
+	background-color: whitesmoke;
+	color: black;
+}
+
+input[type=button]:active{
+	background-color: #995903;
+	color: white;
+}
+
+#edit:link{
+	color: #095402;
+}
+
+#edit:visited{
+	color: #0f2602;
+}
+
+#edit:hover{
+	font-size: 21px;
+}
+
+#delete:link{
+	color:#9c0688;
+}
+
+#delete:hover{
+	font-size: 21px;
+}

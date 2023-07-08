@@ -1,0 +1,216 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Almacenadora",
+    "dateExported": "2023-04-27T16:12:01.830Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "2d31831a-89cc-44de-ae15-0c22e14040bb",
+            "name": "User",
+            "containerId": "",
+            "created": "2023-04-27T14:41:56.625Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "9f7df374-33c8-40aa-bb28-853f6a761011",
+            "name": "Cellars",
+            "containerId": "2d31831a-89cc-44de-ae15-0c22e14040bb",
+            "created": "2023-04-27T14:42:12.080Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "8cfe777d-e873-4dd4-b0f0-dd8ed21ea502",
+            "name": "Benefit",
+            "containerId": "2d31831a-89cc-44de-ae15-0c22e14040bb",
+            "created": "2023-04-27T14:42:26.345Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3de6079b-28b6-4fff-bb29-145f2e10b684",
+            "colId": "5e32c22d-1564-4fcb-a332-1fabec4f70ca",
+            "containerId": "2d31831a-89cc-44de-ae15-0c22e14040bb",
+            "name": "Test",
+            "url": "/user/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-27T14:42:35.673Z",
+            "modified": "2023-04-27T14:44:37.532Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ef528c17-19ad-41e7-9c41-a15280b550ba",
+            "colId": "5e32c22d-1564-4fcb-a332-1fabec4f70ca",
+            "containerId": "8cfe777d-e873-4dd4-b0f0-dd8ed21ea502",
+            "name": "Test",
+            "url": "/benefit/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-04-27T14:46:32.160Z",
+            "modified": "2023-04-27T14:46:41.958Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1bebfdf5-c27d-4b3a-9cf6-6bd0ea14378c",
+            "colId": "5e32c22d-1564-4fcb-a332-1fabec4f70ca",
+            "containerId": "9f7df374-33c8-40aa-bb28-853f6a761011",
+            "name": "Test",
+            "url": "/cellars/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-04-27T14:46:51.129Z",
+            "modified": "2023-04-27T14:46:59.112Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5a8019c9-9fec-4071-9b4a-d04c68308e78",
+            "colId": "5e32c22d-1564-4fcb-a332-1fabec4f70ca",
+            "containerId": "2d31831a-89cc-44de-ae15-0c22e14040bb",
+            "name": "Register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-04-27T14:56:50.015Z",
+            "modified": "2023-04-27T15:16:48.331Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Ian"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Alvarado"
+                    },
+                    {
+                        "name": "username",
+                        "value": "scrum"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123"
+                    },
+                    {
+                        "name": "email",
+                        "value": "ian@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "666"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "04c4848a-4649-4d36-b177-abff4fe7fec9",
+            "colId": "5e32c22d-1564-4fcb-a332-1fabec4f70ca",
+            "containerId": "2d31831a-89cc-44de-ae15-0c22e14040bb",
+            "name": "Login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-04-27T15:06:28.792Z",
+            "modified": "2023-04-27T15:22:23.714Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "Yrodas"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a6fdd5dd-e984-4354-aa06-9ae2ad0ec900",
+            "colId": "5e32c22d-1564-4fcb-a332-1fabec4f70ca",
+            "containerId": "2d31831a-89cc-44de-ae15-0c22e14040bb",
+            "name": "Update",
+            "url": "/user/update/644a90749fea8e5f9ff75bda",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-04-27T15:12:37.785Z",
+            "modified": "2023-04-27T15:14:00.046Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDRhOTA3NDlmZWE4ZTVmOWZmNzViZGEiLCJuYW1lIjoiSWFuIiwic3VybmFtZSI6IkFsdmFyYWRvIiwidXNlcm5hbWUiOiJjdW0iLCJlbWFpbCI6ImlhbkBnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNjgyNjA4NDIxLCJleHAiOjE2ODI2MTU2MjF9.TnDIgMOUBnq-JOSEh2cMlGR7zS_uFvOO6x_Oy_VpVUA\""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "surname",
+                        "value": "monterroso"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7c38253b-b87b-40dc-8877-486885cb0e01",
+            "colId": "5e32c22d-1564-4fcb-a332-1fabec4f70ca",
+            "containerId": "8cfe777d-e873-4dd4-b0f0-dd8ed21ea502",
+            "name": "Create",
+            "url": "/benefit/create",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-04-27T15:23:02.364Z",
+            "modified": "2023-04-27T16:11:12.135Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDRhOGU0ZTlmZWE4ZTVmOWZmNzViZDciLCJuYW1lIjoiWW9oYW4iLCJzdXJuYW1lIjoiUm9kYXMiLCJ1c2VybmFtZSI6Inlyb2RhcyIsImVtYWlsIjoieXJvZGFzQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY4MjYxMTg1NywiZXhwIjoxNjgyNjE5MDU3fQ.CBORxoBah5jujU_59YuYrFXD5A4DPpQpe91g1GESKqk\""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Comida"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Se proporciona alimento a los clientes"
+                    },
+                    {
+                        "name": "price",
+                        "value": "25"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:3200"
+        }
+    }
+}

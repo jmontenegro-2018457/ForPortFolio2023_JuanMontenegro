@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Busqueda binaria PC</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="EstiloBusqueda.css">
+</head>
+
+<body>
+  <center><div class="cuerpo" id="piensa">
+    <h1>Piensa un número del 1 al 1000, tenemos 10 intentos <br> para encontrarlo o perderemos.</h1><br><br>
+    <input type="button" id="menor"  value="Es menor" onclick="Menor()">
+    <button type="button" id="igual"  onclick="Igual()">Empezar</button>
+    <input type="button" id="mayor"  value="Es mayor" onclick="Mayor()">
+    <a href="Index.html"><input type="button" id="ba" name="atras" value="Regresar"></a>
+  </div></center>
+</body>
+
+</html>
+
+  <script>
+    var uno = document.getElementById('igual');
+    
+    var i = 1;
+    var ls= 1001;
+    var li = 0;
+    var lr= Math.floor(ls/2);
+
+
+
+
+
+  function Igual() {
+    
+    if (uno.innerHTML == 'Empezar'){
+        document.getElementById('mayor').style.visibility="visible";
+        document.getElementById('menor').style.visibility="visible";
+        uno.innerHTML = 'Igual';
+        if(i==1){
+        window.alert("Tu número es "+lr+"?");
+        }  
+    }else if(uno.innerHTML=='Igual'){
+        uno.innerHTML = 'Resultados';
+        document.getElementById('mayor').style.visibility="hidden";
+        document.getElementById('menor').style.visibility="hidden";
+    }else if(uno.innerHTML=='Resultados'){
+      if(i<=10){
+          window.alert("Encontramos el número en "+i+" intentos, ¡Ganamos! ☻");
+        }else if(i>10){
+          window.alert("Encontramos el número en "+i+" intentos, ¡Perdimos! ಥ_ಥ");
+        }
+          i=1;
+          ls= 1001;
+          li = 0;
+          lr=  Math.floor(ls/2);
+        uno.innerHTML='Empezar';
+    }else uno.innerHTML = 'Empezar';
+
+    
+      
+    
+     
+
+  }
+
+  function Menor(){
+    ls=lr;
+    lr=Math.floor((li+ls)/2);
+    window.alert("Tu número es "+lr+"?");
+    i=i+1
+  }
+
+  function Mayor(){
+    li=lr;
+    lr=Math.floor((li+ls)/2);
+    window.alert("Tu número es "+lr+"?");
+    i=i+1
+  }
+
+</script>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Busqueda Binaria</title>
+	<meta 	charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="EstiloBusqueda.css">
+</head>
+<body>
+	<center><div class="cuerpo" id="encuentra">	
+			<h1>Encuentra el número entero del 1 al 1000,<br> tienes 10 intentos para ganar.</h1>
+			<br><br>
+			<input type="text" id="num1">
+			<br><br><br>
+			<input type="button" id="Buscar" value="Buscar" onclick="Busqueda()"><br><br>	
+			<a href="Index.html"><input type="button" id="ba" name="atras" value="Regresar"></a>	
+	</div></center>
+
+	
+
+
+	<script type="text/javascript">
+		document.getElementById("num1")
+	    .addEventListener("keyup", function(e) {
+	        if (e.keyCode === 13) {
+	            document.getElementById("Buscar").click();
+	        }
+	    });
+
+	    var i=0;
+	    var num2 = Math.floor(Math.random()*1000);
+	    function Busqueda(){
+	    	
+	    	i=i+1;
+		    
+		    if(num1.value==num2){
+		    	
+		    	num2 = Math.floor(Math.random()*1000);
+		    	ventana = window.open("","","");
+		    	ventana.document.write('<html><head><title>Resultados</title><link rel="stylesheet" type="text/css" href="EstiloBusqueda.css"></head><body id="elige">');
+		    	ventana.document.write("<center><label>Encontraste el valor en "+i+" intentos <br>");
+
+
+		    	if(i>10){
+		    		ventana.document.write("<h1>Perdiste ಥ_ಥ");
+		    	}else
+		    		ventana.document.write("<h1>Ganaste ☻");
+		    	
+		    	ventana.document.write('</label></body></html>');
+		    	i=0;
+		    }else if(num1.value<num2){
+		    	window.alert("El número es mayor")
+		    }else if(num1.value>num2){
+		    	window.alert("El número es menor")
+		    }
+		    	
+	    }
+	</script>
+</body>
+</html>
